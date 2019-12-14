@@ -1,3 +1,8 @@
-from django.urls import path
+from rest_framework import routers
 
-urlpatterns = []
+from .views import BreweryViewset
+
+router = routers.DefaultRouter()
+router.register('api/breweries', BreweryViewset, 'breweries')
+
+urlpatterns = router.urls

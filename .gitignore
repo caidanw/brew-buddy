@@ -205,3 +205,8 @@ backend/env/
 
 # JetBrains specific configs
 .idea/
+
+### Databases ###
+
+# SQLite
+*.sqlite3
