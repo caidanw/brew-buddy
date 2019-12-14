@@ -1,4 +1,5 @@
 ### Node ###
+
 # Logs
 logs
 *.log
@@ -92,6 +93,7 @@ public/
 .dynamodb/
 
 ### Python ###
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -166,6 +168,9 @@ target/
 #   install all needed dependencies.
 #Pipfile.lock
 
+# direnv
+.direnv/
+
 # celery beat schedule file
 celerybeat-schedule
 
@@ -195,3 +200,8 @@ backend/env/
 
 # Pyre type checker
 .pyre/
+
+### IDE ###
+
+# JetBrains specific configs
+.idea/
