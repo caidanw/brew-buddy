@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'breweries',
-    'state_capitals'
+    'state_capitals',
+    'frontend'
 ]
 
 MIDDLEWARE = [
