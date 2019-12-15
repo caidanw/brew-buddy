@@ -20,8 +20,13 @@ class BreweryViewset(viewsets.ModelViewSet):
         capital_id = self.request.query_params.get('near_capital')
 
         if capital_id is not None:
+            # Only return the closest if we are given a specific capital
             capital = StateCapital.objects.all().filter(id=capital_id)[:1].get()
+
+            # Load the breweries from the open brewery database
             data = openbrewerydb.load(state=capital.name)
+
+            # Calculate the closest here
             closest_breweries = calculate_closest(data, capital)
             return closest_breweries
         else:
@@ -36,4 +41,5 @@ def calculate_closest(dataframe, capital: StateCapital):
     # Sort by closest longitude then latitude
     df_long = dataframe.iloc[(dataframe['longitude'] - capital.long).abs().argsort()]
     df_lat = df_long.iloc[(df_long['latitude'] - capital.lat).abs().argsort()][:5]
+
     return df_lat.to_dict('records')
