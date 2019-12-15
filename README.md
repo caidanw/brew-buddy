@@ -1,3 +1,5 @@
+<details><summary>Old content for preservation</summary>
+
 ### Instructions
 1. Read the instructions and prompt
 2. Clone repository to local machine
@@ -25,6 +27,20 @@ the **5 closest breweries** to their state's capital using the [Open Brewery API
 You may choose to remove this boilerplate and use your own tools or any additional tools of your liking. 
 If you choose to use your own tools, please provide information for starting the application.
 
-### Getting Started With Existing Tools
-1. `cd app` > `yarn install` > `PORT=8001 yarn start`
-2. `cd backend` > `pip install -r requirements.txt` > `python manage.py runserver`
+</details>
+
+### Getting Started
+1. `yarn install` > `PORT=8001 yarn dev` | `npm run dev`
+    - Also the option to run a production like env, where webpack won't watch for changes using `build`
+2. `pip install -r requirements.txt` > `python manage.py migrate` > `python manage.py runserver`
+    - Migrations are needed for the capitals and a nice bit of breweries to display on page load.
+
+### Personal Notes
+I had a lot of fun during this take-home project. I went over the recommended 3 hours because I wanted to make this
+project excel, and I was able to split it up into chunks so I could give myself a break to eat and run a few errands.
+I put a lot of extra work into this and I hope it shows because I really want to work for Fisherman and would love to be
+a part of the team building such a unique and interesting product. This was my best attempt to show my passion for
+coding while demonstrating my knowledge within a reasonable time frame.
+
+Thank you for letting me participate, and I would wholeheartedly enjoy joining the team so please, if there is anything I can do to
+help secure a spot within the team then please let me know. 
