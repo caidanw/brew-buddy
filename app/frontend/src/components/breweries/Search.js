@@ -21,7 +21,6 @@ class Search extends Component {
     };
 
     render() {
-        const capitalId = this.state;
         return (
             <Fragment>
                 <div className="form-group">

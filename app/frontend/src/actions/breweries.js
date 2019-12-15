@@ -13,7 +13,7 @@ export const getBreweries = () => dispatch => {
 };
 
 export const getClosestBreweries = capitalId => dispatch => {
-    axios.get(`/api/breweries/closest/${capitalId}`)
+    axios.get(`/api/breweries?near_capital=${capitalId}`)
         .then(res => {
             dispatch({
                 type: GET_CLOSEST_BREWERIES,
