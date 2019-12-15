@@ -43,4 +43,4 @@ a part of the team building such a unique and interesting product. This was my b
 coding while demonstrating my knowledge within a reasonable time frame.
 
 Thank you for letting me participate, and I would wholeheartedly enjoy joining the team so please, if there is anything I can do to
-help secure a spot within the team then please let me know. 
+help secure a spot within the team then please let me know. :heart:
