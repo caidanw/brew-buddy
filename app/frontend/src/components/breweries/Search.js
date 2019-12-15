@@ -25,8 +25,8 @@ class Search extends Component {
             <Fragment>
                 <div className="form-group">
                     <h3>Capital</h3>
-                    <form className="form-inline my-2" onSubmit={this.onSubmit}>
-                        <select className="custom-select w-25 mr-2" ref="capitalId">
+                    <form className="form-inline my-2 " onSubmit={this.onSubmit}>
+                        <select className="custom-select mr-2" ref="capitalId">
                             { this.props.capitals.map(capital => (
                                 <option key={capital.id} value={capital.id}>{capital.name}, {capital.capital}</option>
                             ))}
