@@ -1,6 +1,6 @@
 import openbrewerydb
 from django.apps import apps
-from rest_framework import viewsets, permissions, generics
+from rest_framework import viewsets, permissions
 
 from .models import Brewery
 from .serializers import BrewerySerializer
@@ -25,6 +25,7 @@ class BreweryViewset(viewsets.ModelViewSet):
             closest_breweries = calculate_closest(data, capital)
             return closest_breweries
         else:
+            # Display the 10 most recently updated breweries
             return queryset.order_by('updated_at')[:10]
 
 

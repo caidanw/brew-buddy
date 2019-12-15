@@ -1,10 +1,10 @@
 import React, {Component, Fragment} from 'react';
 import ReadDOM from 'react-dom';
 
-import Header from "./layout/Header";
-import Dashboard from "./breweries/Dashboard";
+import Header from './layout/Header';
+import Dashboard from './breweries/Dashboard';
 
-import { Provider } from 'react-redux';
+import {Provider} from 'react-redux';
 import store from '../store';
 
 class App extends Component {
